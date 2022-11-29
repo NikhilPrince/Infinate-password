@@ -84,14 +84,13 @@ function generatePassword(){
 
 var characters = lowerLetter;
 var password = "";
-if (uppercaseCheck & numberCheck & specialCheck){
+if(uppercaseCheck & numberCheck & specialCheck){
   characters += upperLetter + numberChar + symbolChar;
 }else{
   characters = lowerLetter; }
 
   for(var i = 0; i < passwordLength; i++){
-    password += characters.charAt(Math.floor(Math.random() * characters.length));
-  }
+    password += characters.charAt(Math.floor(Math.random() * characters.length)); }
   return password;
 }
 
